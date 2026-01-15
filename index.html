@@ -1,1 +1,1074 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>The Thaw Method — A Gentle Path Out of Freeze (Advertorial)</title>
+    <meta
+      name="description"
+      content="An advertorial-style educational feature on the freeze response and how gentle, slow breath-led movement can support nervous system regulation — with research citations. Take the Freeze Pattern check and get matched to a Thaw Mini-Course."
+    />
 
+    <meta property="og:title" content="The Thaw Method — A Gentle Path Out of Freeze" />
+    <meta
+      property="og:description"
+      content="If insight hasn’t unstuck your body, this educational feature explains why — and what to do next. Research citations included."
+    />
+    <meta property="og:type" content="website" />
+
+    <style>
+      :root {
+        --bg: #fbfbfd;
+        --surface: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --muted-2: #64748b;
+        --border: rgba(15, 23, 42, 0.1);
+        --shadow: 0 18px 45px rgba(2, 6, 23, 0.08);
+        --brand: #0ea5e9;
+        --brand-2: #10b981;
+        --warn: #fb7185;
+        --ring: rgba(14, 165, 233, 0.25);
+        --radius: 18px;
+
+        --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+          "Segoe UI Emoji";
+        --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font);
+        color: var(--text);
+        background: radial-gradient(1100px 550px at 20% -10%, rgba(14, 165, 233, 0.12), transparent 60%),
+          radial-gradient(900px 500px at 90% 10%, rgba(16, 185, 129, 0.11), transparent 55%), var(--bg);
+        line-height: 1.55;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a.underline {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      .container {
+        width: min(1080px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        background: rgba(251, 251, 253, 0.75);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 12px 0;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 10px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 999px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .badge-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--brand), var(--brand-2));
+        box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.12);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .nav a {
+        font-size: 13px;
+        color: var(--muted);
+        padding: 6px 8px;
+        border-radius: 10px;
+      }
+
+      .nav a:hover {
+        background: rgba(15, 23, 42, 0.04);
+        color: var(--text);
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.92);
+        color: var(--text);
+        font-weight: 650;
+        letter-spacing: -0.01em;
+        box-shadow: 0 1px 0 rgba(2, 6, 23, 0.03);
+        transition: transform 0.05s ease, box-shadow 0.2s ease, background 0.2s ease;
+      }
+
+      .btn:hover {
+        background: #ffffff;
+        box-shadow: 0 10px 24px rgba(2, 6, 23, 0.08);
+      }
+
+      .btn:active {
+        transform: translateY(1px);
+      }
+
+      .btn-primary {
+        border: 1px solid rgba(14, 165, 233, 0.35);
+        background: linear-gradient(135deg, rgba(14, 165, 233, 0.95), rgba(16, 185, 129, 0.92));
+        color: white;
+        box-shadow: 0 12px 35px rgba(14, 165, 233, 0.16);
+      }
+
+      .btn-primary:hover {
+        box-shadow: 0 16px 44px rgba(14, 165, 233, 0.22);
+      }
+
+      .hero {
+        padding: 56px 0 18px;
+      }
+
+      .grid-hero {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 22px;
+        align-items: start;
+      }
+
+      @media (max-width: 900px) {
+        .grid-hero {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-card {
+        padding: 26px;
+      }
+
+      .kicker {
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--muted-2);
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+
+      .kicker span {
+        font-family: var(--mono);
+        letter-spacing: 0.08em;
+        color: rgba(15, 23, 42, 0.65);
+        background: rgba(15, 23, 42, 0.04);
+        padding: 4px 8px;
+        border-radius: 10px;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(30px, 3.2vw, 44px);
+        letter-spacing: -0.03em;
+        line-height: 1.08;
+      }
+
+      .subhead {
+        margin: 0 0 18px;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .hero-ctas {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 18px;
+      }
+
+      .fineprint {
+        margin-top: 12px;
+        font-size: 12px;
+        color: var(--muted-2);
+      }
+
+      .sidebar {
+        padding: 20px;
+      }
+
+      .sidebar h3 {
+        margin: 0 0 10px;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+      }
+
+      .checklist {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .checklist li {
+        margin: 8px 0;
+      }
+
+      .hr {
+        height: 1px;
+        background: var(--border);
+        margin: 18px 0;
+      }
+
+      .section {
+        padding: 18px 0;
+      }
+
+      .section h2 {
+        margin: 0 0 10px;
+        font-size: 22px;
+        letter-spacing: -0.02em;
+      }
+
+      .section p {
+        margin: 10px 0;
+        color: var(--muted);
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+
+      @media (max-width: 900px) {
+        .split {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .callout {
+        border-radius: 16px;
+        border: 1px solid rgba(14, 165, 233, 0.22);
+        background: linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(16, 185, 129, 0.06));
+        padding: 16px;
+        color: rgba(15, 23, 42, 0.75);
+      }
+
+      .callout strong {
+        color: var(--text);
+      }
+
+      .quote {
+        border-left: 3px solid rgba(14, 165, 233, 0.6);
+        padding-left: 14px;
+        margin: 12px 0;
+        color: rgba(15, 23, 42, 0.74);
+      }
+
+      .pill-row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .pill {
+        font-size: 12px;
+        color: rgba(15, 23, 42, 0.72);
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(15, 23, 42, 0.1);
+        background: rgba(255, 255, 255, 0.75);
+      }
+
+      .evidence {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 12px;
+      }
+
+      @media (max-width: 900px) {
+        .evidence {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .ref {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 14px 14px 12px;
+      }
+
+      .ref .tag {
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(71, 85, 105, 0.85);
+        margin-bottom: 8px;
+      }
+
+      .ref .title {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin: 0 0 6px;
+        color: var(--text);
+      }
+
+      .ref .desc {
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .ref a {
+        font-size: 13px;
+        color: rgba(14, 165, 233, 0.95);
+        font-weight: 650;
+      }
+
+      .steps {
+        counter-reset: step;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+        margin-top: 12px;
+      }
+
+      @media (max-width: 900px) {
+        .steps {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .step {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 14px;
+      }
+
+      .step:before {
+        counter-increment: step;
+        content: counter(step);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        border-radius: 10px;
+        background: rgba(15, 23, 42, 0.06);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        margin-bottom: 10px;
+        font-weight: 800;
+        color: rgba(15, 23, 42, 0.75);
+        font-family: var(--mono);
+        font-size: 12px;
+      }
+
+      .step h4 {
+        margin: 0 0 6px;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+      }
+
+      .step p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .cta-band {
+        margin: 18px 0 0;
+        padding: 18px;
+        border-radius: 18px;
+        border: 1px solid rgba(16, 185, 129, 0.22);
+        background: linear-gradient(135deg, rgba(16, 185, 129, 0.09), rgba(14, 165, 233, 0.08));
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .cta-band h3 {
+        margin: 0 0 4px;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+      }
+
+      .cta-band p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      details {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.88);
+        padding: 12px 14px;
+      }
+
+      details + details {
+        margin-top: 10px;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+
+      .legal {
+        font-size: 12px;
+        color: var(--muted);
+        line-height: 1.6;
+        margin-top: 10px;
+      }
+
+      .footer {
+        padding: 28px 0 60px;
+      }
+
+      .footer .meta {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--muted-2);
+        font-size: 12px;
+        padding-top: 14px;
+        border-top: 1px solid var(--border);
+        margin-top: 16px;
+      }
+
+      .sticky-mobile {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 50;
+        padding: 10px 12px;
+        background: rgba(251, 251, 253, 0.82);
+        backdrop-filter: blur(12px);
+        border-top: 1px solid var(--border);
+        display: none;
+      }
+
+      .sticky-mobile .wrap {
+        display: flex;
+        gap: 10px;
+      }
+
+      .sticky-mobile .btn {
+        flex: 1;
+      }
+
+      @media (max-width: 720px) {
+        .sticky-mobile {
+          display: block;
+        }
+        .footer {
+          padding-bottom: 96px;
+        }
+      }
+
+      .warning {
+        display: inline-flex;
+        gap: 10px;
+        align-items: flex-start;
+        border: 1px solid rgba(251, 113, 133, 0.22);
+        background: rgba(251, 113, 133, 0.06);
+        border-radius: 16px;
+        padding: 12px 14px;
+        color: rgba(15, 23, 42, 0.75);
+      }
+
+      .warning .icon {
+        width: 22px;
+        height: 22px;
+        border-radius: 9px;
+        background: rgba(251, 113, 133, 0.12);
+        border: 1px solid rgba(251, 113, 133, 0.22);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--mono);
+        font-weight: 900;
+        color: rgba(190, 18, 60, 0.75);
+        flex: 0 0 auto;
+      }
+
+      .warning p {
+        margin: 0;
+        font-size: 13px;
+        color: rgba(15, 23, 42, 0.7);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="badge" aria-label="Advertorial label">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Advertorial / Educational Feature
+        </div>
+        <nav class="nav" aria-label="Page navigation">
+          <a href="#story">Story</a>
+          <a href="#what-is-freeze">What freeze is</a>
+          <a href="#research">The research</a>
+          <a href="#method">The Thaw Method</a>
+          <a class="btn btn-primary" href="https://freezepattern.netlify.app/" rel="noopener"
+            >Take the Freeze Pattern check</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container grid-hero">
+          <div class="card hero-card">
+            <div class="kicker">
+              A gentle nervous-system approach <span>thaw-method</span>
+            </div>
+            <h1>Why your body won’t “just relax” (even when your life is calmer now)</h1>
+            <p class="subhead">
+              If you’ve done the insight work but still feel tense, numb, vigilant, collapsed, guarded, or quietly
+              agitated… you’re not failing. You may be in a <strong>freeze pattern</strong>—and thawing works differently
+              than “trying harder.”
+            </p>
+
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="https://freezepattern.netlify.app/" rel="noopener"
+                >Take the 60-second Freeze Pattern check</a
+              >
+              <a class="btn" href="#research">See the science citations</a>
+            </div>
+
+            <p class="fineprint">
+              Educational content only. Not medical or mental health advice. If you’re in crisis, seek urgent local
+              support.
+            </p>
+          </div>
+
+          <aside class="card sidebar">
+            <h3>Quick self-check (does this sound like you?)</h3>
+            <ul class="checklist">
+              <li>You understand “why,” but your body still feels stuck.</li>
+              <li>Rest doesn’t restore you (sleep is light, your system stays “on”).</li>
+              <li>Relaxation tools work briefly… then your tension snaps back.</li>
+              <li>You swing between over-control and collapse.</li>
+              <li>You want gentle support, not more pressure.</li>
+            </ul>
+            <div class="hr"></div>
+            <div class="callout">
+              <strong>What this page does:</strong> explains freeze in plain language, shows what research says about
+              slow breath-led movement practices (qigong/tai chi), then points you to a simple next step.
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="story" class="section">
+        <div class="container">
+          <div class="card hero-card">
+            <h2>The quiet problem most “healing advice” ignores</h2>
+            <p>
+              A lot of personal growth content assumes the same thing: if you just understand yourself well enough,
+              you’ll change.
+            </p>
+            <p>
+              But if your nervous system learned that the safest move was <strong>to brace, contain, numb, or stay on
+              alert</strong>, then insight can feel like you’re standing outside a locked door… explaining to the lock
+              why it should open.
+            </p>
+            <p class="quote">
+              Freeze isn’t weakness. It’s a survival strategy: the body conserves energy, tightens, dulls sensation, and
+              limits movement when fight/flight isn’t possible—or hasn’t worked.
+            </p>
+            <div class="split">
+              <div>
+                <h2>What “thaw” means (and why it’s not the same as healing)</h2>
+                <p>
+                  Thawing isn’t a dramatic breakthrough. It’s often small and physical: a breath reaches lower, a jaw
+                  releases, your feet feel the floor again, your chest softens, your mind stops scanning for one moment.
+                </p>
+                <p>
+                  You can’t force thaw. You can only create conditions where your system starts to register:
+                  <strong>“safe enough.”</strong>
+                </p>
+                <div class="pill-row" aria-label="Thaw conditions">
+                  <span class="pill">slowness</span>
+                  <span class="pill">predictability</span>
+                  <span class="pill">gentle attention</span>
+                  <span class="pill">respect for your pace</span>
+                </div>
+              </div>
+              <div>
+                <h2>If you’ve tried a lot already… this matters</h2>
+                <p>
+                  Many tools fail not because they’re “bad,” but because they’re mismatched to your freeze style.
+                  Calming practices can feel unsafe for vigilance. Energizing practices can destabilize collapse.
+                </p>
+                <div class="warning" role="note">
+                  <div class="icon" aria-hidden="true">!</div>
+                  <div>
+                    <p>
+                      The goal here isn’t to make you “better at coping.” It’s to help your system reorganize without
+                      re-triggering overwhelm.
+                    </p>
+                  </div>
+                </div>
+                <div class="cta-band" style="margin-top: 14px">
+                  <div>
+                    <h3>Want the “right door” for your nervous system?</h3>
+                    <p>Take the Freeze Pattern check and get matched to a gentle starting point.</p>
+                  </div>
+                  <a class="btn btn-primary" href="https://freezepattern.netlify.app/" rel="noopener">Start here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="what-is-freeze" class="section">
+        <div class="container">
+          <div class="card hero-card">
+            <h2>What freeze really is (in practical terms)</h2>
+            <p>
+              Freeze often looks “functional” from the outside. Inside, it can feel like tension + numbness living in
+              the same body. Your system stays guarded because it learned that guarding was safer than feeling.
+            </p>
+            <div class="split">
+              <div class="callout">
+                <strong>Freeze is protective intelligence.</strong> It’s your nervous system doing its job—just using an
+                old strategy in a newer chapter of your life.
+              </div>
+              <div class="callout">
+                <strong>Thaw starts below the mind.</strong> The fastest way “out” is often through slow, predictable
+                signals of safety: breath, posture, gentle movement, and kind attention.
+              </div>
+            </div>
+            <p>
+              That’s why mind–body movement systems like <strong>qigong</strong> and <strong>tai chi</strong> are
+              consistently studied in mental health contexts: they combine slow movement, breath, attention, and
+              repeatable structure—exactly the kind of input a defensive nervous system can tolerate.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section">
+        <div class="container">
+          <div class="card hero-card">
+            <h2>“Is there actual evidence for this?”</h2>
+            <p>
+              Yes—especially for mood, stress, anxiety/depression symptoms, sleep, and autonomic regulation markers
+              associated with resilience. Below is a curated research list you provided, formatted for easy scanning.
+            </p>
+
+            <div class="evidence" aria-label="Evidence bibliography cards">
+              <article class="ref">
+                <div class="tag">Systematic review</div>
+                <p class="title">Tai Chi and Qigong for psychological stress & mood disturbance (Abbott)</p>
+                <p class="desc">
+                  Review reporting associations with improvements in psychological well-being, stress, anxiety, and
+                  depression across studies.
+                </p>
+                <a class="underline" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3917559/" rel="noopener"
+                  >Read on PubMed Central</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">Systematic review + meta-analysis</div>
+                <p class="title">Effects of Qigong on anxiety, depression & psychological well-being (Lee et al.)</p>
+                <p class="desc">Meta-analytic synthesis of clinical studies examining anxiety and depression outcomes.</p>
+                <a class="underline" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3557628/" rel="noopener"
+                  >Read on PubMed Central</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">Meta-analysis</div>
+                <p class="title">Tai Chi & Qigong effects on depression and anxiety (Yin)</p>
+                <p class="desc">Meta-analytic evidence of small-to-moderate improvements in depression and anxiety symptoms.</p>
+                <a
+                  class="underline"
+                  href="https://www.sciencedirect.com/science/article/abs/pii/S1755296614000465"
+                  rel="noopener"
+                  >View on ScienceDirect</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">Youth population</div>
+                <p class="title">Tai Chi/Qigong for adolescents’ psychological status (Liu et al.)</p>
+                <p class="desc">Systematic review suggesting benefits for depression, anxiety, and stress in youth.</p>
+                <a
+                  class="underline"
+                  href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.746975/full"
+                  rel="noopener"
+                  >Read on Frontiers</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">Older adults</div>
+                <p class="title">Traditional Chinese exercises improve anxiety & depression in older adults (Dong et al., 2025)</p>
+                <p class="desc">
+                  Meta-analysis reporting reductions in anxiety/depressive symptoms, with longer practice durations linked to
+                  stronger effects.
+                </p>
+                <a
+                  class="underline"
+                  href="https://journals.lww.com/md-journal/fulltext/2025/03210/exploring_the_benefits_of_traditional_chinese.56.aspx"
+                  rel="noopener"
+                  >Read on Lippincott</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">Cancer populations</div>
+                <p class="title">Tai Chi/Qigong and anxiety/depression relief in cancer patients (Sun et al., 2024)</p>
+                <p class="desc">Review reporting small-to-moderate mental health benefits among cancer survivors.</p>
+                <a
+                  class="underline"
+                  href="https://www.sciencedirect.com/science/article/abs/pii/S1744388124000239"
+                  rel="noopener"
+                  >View on ScienceDirect</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">Trauma-exposed populations</div>
+                <p class="title">Tai Chi and Qigong for trauma-exposed populations (Niles et al.)</p>
+                <p class="desc">Systematic review suggesting these practices are safe/feasible and may reduce symptom severity.</p>
+                <a
+                  class="underline"
+                  href="https://www.sciencedirect.com/science/article/abs/pii/S1755296622000114"
+                  rel="noopener"
+                  >View on ScienceDirect</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">PTSD symptoms (mind–body)</div>
+                <p class="title">Mind–body exercises (yoga, tai chi, qigong) & PTSD symptom reduction (Zhu et al.)</p>
+                <p class="desc">
+                  Review supporting mind–body practices (including qigong) as beneficial for PTSD symptom reduction.
+                </p>
+                <a
+                  class="underline"
+                  href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.738211/full"
+                  rel="noopener"
+                  >Read on Frontiers</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">Mechanism (breathing)</div>
+                <p class="title">Slow breathing and autonomic/psychological effects (Zaccaro et al.)</p>
+                <p class="desc">
+                  Review linking slow breathing to HRV changes, parasympathetic activity, and improved stress/anxiety markers.
+                </p>
+                <a
+                  class="underline"
+                  href="https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2018.00353/full"
+                  rel="noopener"
+                  >Read on Frontiers</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">Mechanism (HRV)</div>
+                <p class="title">Tai Chi and heart rate variability meta-analysis (Zhou et al., 2024)</p>
+                <p class="desc">
+                  Meta-analysis reporting improvements in autonomic markers (e.g., HF power, SDNN) associated with stress
+                  resilience.
+                </p>
+                <a class="underline" href="https://pubmed.ncbi.nlm.nih.gov/37695835/" rel="noopener">Read on PubMed</a>
+              </article>
+
+              <article class="ref">
+                <div class="tag">Mechanism (breath in practice)</div>
+                <p class="title">Breathing exercises in Tai Chi/Qigong: therapeutic mechanisms (Mendo)</p>
+                <p class="desc">Review highlighting breath as a core mechanism linking these practices to outcomes.</p>
+                <a class="underline" href="https://www.mdpi.com/2227-9032/10/10/1934" rel="noopener">Read on MDPI</a>
+              </article>
+
+              <article class="ref">
+                <div class="tag">Sleep quality</div>
+                <p class="title">Tai Chi improves sleep quality (Raman)</p>
+                <p class="desc">Systematic review reporting sleep gains that often co-occur with mood regulation improvements.</p>
+                <a class="underline" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5570448/" rel="noopener"
+                  >Read on PubMed Central</a
+                >
+              </article>
+
+              <article class="ref">
+                <div class="tag">Perceived stress</div>
+                <p class="title">Mind–body exercise reduces perceived stress (Zou et al.)</p>
+                <p class="desc">Meta-analysis showing Tai Chi and yoga reduce perceived stress in adult populations.</p>
+                <a class="underline" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6262541/" rel="noopener"
+                  >Read on PubMed Central</a
+                >
+              </article>
+            </div>
+
+            <div class="hr"></div>
+            <div class="callout">
+              <strong>Key takeaway:</strong> the strongest recurring “ingredients” across these practices are slow,
+              controlled breathing, gentle movement, and attentive awareness—inputs that can help a defensive system
+              soften without force.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="method" class="section">
+        <div class="container">
+          <div class="card hero-card">
+            <h2>The Thaw Method (a direct-response summary)</h2>
+            <p>
+              The Thaw Method is a gentle framework designed for people who don’t need more intensity—they need a way to
+              feel safe enough to come back online.
+            </p>
+
+            <div class="steps" aria-label="The Three Laws of Thaw">
+              <div class="step">
+                <h4>Go slow enough to stay present</h4>
+                <p>Speed can deepen freeze. Slowness keeps you in your window of tolerance so sensation can return.</p>
+              </div>
+              <div class="step">
+                <h4>Become predictable to yourself</h4>
+                <p>Freeze forms in unpredictability. Predictable rhythm, posture, and repetition build steadiness.</p>
+              </div>
+              <div class="step">
+                <h4>Use breath + awareness to create internal safety</h4>
+                <p>You don’t have to analyze feelings. You meet them—so your system learns you’re not alone with them.</p>
+              </div>
+            </div>
+
+            <div class="hr"></div>
+            <div class="split">
+              <div>
+                <h2>Why personalization matters</h2>
+                <p>
+                  The same practice can land as soothing in one body and overwhelming in another. That’s why the Thaw
+                  Method starts with identification—finding your dominant freeze pattern—so your starting point is
+                  precise and doable.
+                </p>
+                <p>
+                  In this approach, patterns are also viewed through an “organ qi” lens (a traditional map connecting
+                  energy, emotion, and survival organization). You don’t have to “believe” anything for the map to be
+                  useful—its job is to help you get specific without forcing.
+                </p>
+              </div>
+              <div>
+                <h2>What people often notice first</h2>
+                <ul class="checklist">
+                  <li>Breath becomes deeper without “working at it.”</li>
+                  <li>Muscle tension reduces in pockets (jaw, shoulders, ribs, hips).</li>
+                  <li>Emotion moves in smaller, manageable waves (less overwhelm).</li>
+                  <li>Sleep and energy stabilize gradually.</li>
+                  <li>A growing sense of inner trust and steadiness.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cta-band" style="margin-top: 18px">
+              <div>
+                <h3>Ready for a gentle beginning?</h3>
+                <p>Take the Freeze Pattern check and get matched to the Thaw Mini-Course bundle.</p>
+              </div>
+              <a class="btn btn-primary" href="https://freezepattern.netlify.app/" rel="noopener">Continue</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="card hero-card">
+            <h2>Frequently asked (so you feel safe starting)</h2>
+            <details>
+              <summary>Is this therapy?</summary>
+              <div class="legal">
+                No. This is educational and practice-based. It can be trauma-informed, but it does not create a
+                therapist–client relationship and is not a substitute for medical or mental health care.
+              </div>
+            </details>
+            <details>
+              <summary>What if I’ve tried breathwork and it didn’t help?</summary>
+              <div class="legal">
+                Many “breathwork” styles are too intense for a freeze pattern (long retentions, forceful breathing, cathartic
+                release). The approach referenced here emphasizes slow, gentle, predictable breathing paired with movement and
+                titrated attention.
+              </div>
+            </details>
+            <details>
+              <summary>What if I’m afraid I’ll get overwhelmed?</summary>
+              <div class="legal">
+                The core rule is to go slow enough to stay present. If anything spikes distress, the instruction is to stop,
+                orient, and return to safety cues. Always work within your capacity and consult qualified professionals as
+                needed.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="container">
+          <div class="card hero-card">
+            <h2>Privacy notice & disclaimer</h2>
+            <p class="subhead" style="margin-top: 6px">
+              For transparency and compliance. Last updated: <strong>12/24/25</strong>.
+            </p>
+
+            <details>
+              <summary>Privacy Notice (summary)</summary>
+              <div class="legal">
+                <p>
+                  We may collect personal information you provide (e.g., name, email, payment details via third-party processors)
+                  and basic analytics (e.g., IP address, browser type, pages visited, time on site).
+                </p>
+                <p>
+                  Information may be used to deliver purchases/downloads, send relevant emails (unsubscribe anytime), improve
+                  performance, and comply with legal obligations. We do not sell or rent your personal information.
+                </p>
+                <p>
+                  Third-party providers may include payment processors, email delivery services, course hosting platforms, and
+                  analytics tools. Providers receive only what’s necessary and are required to protect your data.
+                </p>
+                <p>
+                  Cookies may be used to enhance user experience and collect anonymous usage data. You can disable cookies in
+                  your browser settings.
+                </p>
+                <p>
+                  To request access/corrections/deletion, contact: <a class="underline" href="mailto:jaimcpheron@gmail.com"
+                    >jaimcpheron@gmail.com</a
+                  >
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>Disclaimer (full intent)</summary>
+              <div class="legal">
+                <p>
+                  The content, courses, practices, and services referenced on this website are offered for educational and
+                  informational purposes only.
+                </p>
+                <p>
+                  Nothing is intended to diagnose, treat, cure, or prevent any medical or mental health condition. This is not a
+                  substitute for medical care, psychotherapy, or licensed mental health treatment. Always consult a qualified
+                  professional regarding your physical or mental health.
+                </p>
+                <p>
+                  By participating, you acknowledge you are responsible for your own well-being, will listen to your body, and
+                  will stop any practice that causes discomfort or distress. Individual outcomes vary; no guarantees are made.
+                </p>
+                <p>
+                  External links are provided for convenience; we are not responsible for third-party content or privacy
+                  practices.
+                </p>
+                <p>
+                  Contact: Jai Lynn McPheron at Healing Cosmos —
+                  <a class="underline" href="mailto:jaimcpheron@gmail.com">jaimcpheron@gmail.com</a>
+                  — <a class="underline" href="https://healingcosmos.com/" rel="noopener">healingcosmos.com</a>
+                </p>
+              </div>
+            </details>
+
+            <div class="meta">
+              <div>© <span id="year"></span> The Thaw Method</div>
+              <div>
+                Continue to the Freeze Pattern page:
+                <a class="underline" href="https://freezepattern.netlify.app/" rel="noopener">freezepattern.netlify.app</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="sticky-mobile" role="region" aria-label="Sticky mobile call to action">
+      <div class="container wrap">
+        <a class="btn btn-primary" href="https://freezepattern.netlify.app/" rel="noopener">Take the Freeze Pattern check</a>
+        <a class="btn" href="#research">Citations</a>
+      </div>
+    </div>
+
+    <script>
+      // small quality-of-life behaviors, no trackers
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+      for (const a of document.querySelectorAll('a[href^="#"]')) {
+        a.addEventListener("click", (e) => {
+          const href = a.getAttribute("href");
+          const el = href ? document.querySelector(href) : null;
+          if (!el) return;
+          e.preventDefault();
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.replaceState(null, "", href);
+        });
+      }
+    </script>
+  </body>
+</html>
